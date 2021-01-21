@@ -1,39 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <title>@yield('title',config('app.name'))</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="TemplateMo">
 
-    @include('front.layouts.inc.header')
+    @include('front.layouts.inc.head')
+
 
 </head>
 <body>
-@include('front.layouts.inc.right_sideBar')
-<!-- Header ====================================================================== -->
+<header>
+    @include('front.layouts.inc.header')
+</header>
 
+@include('front.layouts.inc.banner')
 
-<div id="mainBody">
-    <div class="container">
-        <div class="row">
-            <!-- Sidebar ================================================== -->
-            <!-- include('front.layouts.inc.category-sidebar')================================================== -->
-
-            <!-- Sidebar end=============================================== -->
-            @yield('content')
-
+<main>
+    <section class="blog-posts grid-system">
+        <div class="container">
+            <div class="row">
+                @yield('content')
+                @include('front.layouts.inc.right_sideBar')
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
-
-<!-- Footer ================================================================== -->
+</main>
 
 @include('front.layouts.inc.footer')
-
-
+@include('front.layouts.inc.footer_script')
 
 </body>
 </html>
