@@ -75,7 +75,7 @@
                             </li>
                             <li class="replied">
                                 <div class="author-thumb">
-                                    <img src="public/bootstrap/img/comment-author-02.jpg" alt="">
+                                    <img src="assets/images/comment-author-02.jpg" alt="">
                                 </div>
                                 <div class="right-content">
                                     <h4>Thirteen Man<span>May 20, 2020</span></h4>
@@ -85,7 +85,7 @@
                             </li>
                             <li>
                                 <div class="author-thumb">
-                                    <img src="public/bootstrap/img/comment-author-03.jpg" alt="">
+                                    <img src="assets/images/comment-author-03.jpg" alt="">
                                 </div>
                                 <div class="right-content">
                                     <h4>Belisimo Mama<span>May 16, 2020</span></h4>
@@ -96,7 +96,7 @@
                             </li>
                             <li class="replied">
                                 <div class="author-thumb">
-                                    <img src="public/bootstrap/img/comment-author-02.jpg" alt="">
+                                    <img src="assets/images/comment-author-02.jpg" alt="">
                                 </div>
                                 <div class="right-content">
                                     <h4>Thirteen Man<span>May 22, 2020</span></h4>

@@ -16,23 +16,21 @@
     @include('front.layouts.inc.header')
 </header>
 
-@if (Request::path() !== 'home' )
-    @include('front.layouts.inc.banner')
-@elseif (Request::path() == 'home' )
-    @include('front.layouts.inc.slider')
-@endif
+@include('front.layouts.inc.banner')
 
-
-<main>
-    <section class="blog-posts grid-system">
-        <div class="container">
-            <div class="row">
-                @yield('content')
-                @include('front.layouts.inc.right_sideBar')
-            </div>
+<div id="mainBody">
+    <div class="container">
+        <div class="row">
+            @if (Request::path() == '/about' )
+                @include('front.about')
+            @elseif (Request::path() == '/contact' )
+                @include('front.contact')
+            @endif
+            @yield('content')
         </div>
-    </section>
-</main>
+    </div>
+</div>
+
 
 @include('front.layouts.inc.footer')
 @include('front.layouts.inc.footer_script')
