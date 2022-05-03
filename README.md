@@ -1,4 +1,4 @@
 
 ## HW
-Preview can be found in Week10_HW.pdf
+Preview https://github.com/HulyaZ/Week10_HW/blob/master/Docs/Week10_HW.pdf
 
